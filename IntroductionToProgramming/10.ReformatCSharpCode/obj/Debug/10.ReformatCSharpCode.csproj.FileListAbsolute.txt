@@ -1,0 +1,1 @@
+C:\Users\Dimitar\Documents\Visual Studio 2013\Projects\IntroductionToProgramming\IntroductionToProgramming\10.ReformatCSharpCode\bin\Debug\10.ReformatCSharpCode.exe.config

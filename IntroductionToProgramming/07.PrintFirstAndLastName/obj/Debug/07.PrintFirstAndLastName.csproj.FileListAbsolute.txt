@@ -1,0 +1,1 @@
+C:\Users\Dimitar\Documents\Visual Studio 2013\Projects\IntroductionToProgramming\IntroductionToProgramming\07.PrintFirstAndLastName\bin\Debug\07.PrintFirstAndLastName.exe.config
