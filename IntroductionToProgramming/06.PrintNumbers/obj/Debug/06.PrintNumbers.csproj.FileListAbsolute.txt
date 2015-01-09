@@ -1,1 +1,0 @@
-C:\Users\Dimitar\Documents\Visual Studio 2013\Projects\IntroductionToProgramming\IntroductionToProgramming\06.PrintNumbers\bin\Debug\06.PrintNumbers.exe.config
