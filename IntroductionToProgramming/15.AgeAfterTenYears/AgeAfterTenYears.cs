@@ -1,3 +1,4 @@
+/*
  Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
  */
 
@@ -26,14 +27,6 @@ class AgeAfterTenYears
             Console.WriteLine("You are {0} years old.", age);
             int ageInTenYears = age + 10;
             Console.WriteLine("You will be {0} years old in 10 years.", ageInTenYears);
-        }
-        catch (Exception)
-        {
-            Console.WriteLine("Invalid Date");
-        }
-    }
-}
-
         }
         catch (Exception)
         {
