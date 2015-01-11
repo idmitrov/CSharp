@@ -1,22 +1,3 @@
-﻿/*
- Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
- */
-
-using System;
-using System.Globalization;
-using System.Threading;
-
-class AgeAfterTenYears
-{
-    static void Main()
-    {
-        Console.Write("Type your birthday in format (dd.MM.yyyy): ");
-        string userInput = Console.ReadLine(),
-               format = "dd.MM.yyyy";
-
-        try
-        {
-            /*
  Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
  */
 
