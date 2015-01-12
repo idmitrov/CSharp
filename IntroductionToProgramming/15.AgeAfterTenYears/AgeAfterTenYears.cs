@@ -1,4 +1,10 @@
 /*
+     Write a program that exchanges bits {p, p+1, …, p+k-1} with bits {q, q+1, …, q+k-1} of a given 32-bit unsigned integer.
+     The first and the second sequence of bits may not overlap.
+ */
+
+using System;
+/*
  Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
  */
 
@@ -18,15 +24,11 @@ class AgeAfterTenYears
         {
             DateTime userBday = DateTime.ParseExact(userInput, format, CultureInfo.InvariantCulture);
             DateTime crntDT = DateTime.Now;
-            int age = (crntDT.Year - userBday.Year) - 1;
+            int age = crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day ?
+                crntDT.Year - userBday.Year : crntDT.Year - userBday.Year - 1;
 
-            if (crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day)
-            {
-                age++;
-            }
             Console.WriteLine("You are {0} years old.", age);
-            int ageInTenYears = age + 10;
-            Console.WriteLine("You will be {0} years old in 10 years.", ageInTenYears);
+            Console.WriteLine("You will be {0} years old in 10 years.", age+=10);
         }
         catch (Exception)
         {
