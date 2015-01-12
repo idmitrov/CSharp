@@ -13,16 +13,15 @@ class AgeAfterTenYears
         Console.Write("Type your birthday in format (dd.MM.yyyy): ");
         string userInput = Console.ReadLine(),
                format = "dd.MM.yyyy";
-
+               
         try
         {
             DateTime userBday = DateTime.ParseExact(userInput, format, CultureInfo.InvariantCulture);
             DateTime crntDT = DateTime.Now;
-            int age = crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day ?
-                crntDT.Year - userBday.Year : crntDT.Year - userBday.Year - 1;
+            int age = crntDT.Year - userBday.Year;
 
-            Console.WriteLine("You are {0} years old.", age);
-            Console.WriteLine("You will be {0} years old in 10 years.", age+=10);
+            Console.WriteLine("Your age: {0}", crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day ? age : age -= 1);
+            Console.WriteLine("Your age in 10 years: {0}", age += 10);
         }
         catch (Exception)
         {
