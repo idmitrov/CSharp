@@ -19,7 +19,7 @@ class AgeAfterTenYears
             int age = crntDT.Year - userBday.Year;
 
             Console.WriteLine("Your age: {0}", crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day ? age : age -= 1);
-            Console.WriteLine("Your age in 10 years: {0}", age += 10);
+            Console.WriteLine("Your age in 10 years: {0}", age + 10);
         }
         catch (Exception)
         {
