@@ -12,7 +12,6 @@ class AgeAfterTenYears
                format = "dd.MM.yyyy";
         DateTime userBday = default(DateTime);
 
-
         if (DateTime.TryParseExact(userInput, format, null, DateTimeStyles.None, out userBday))
         {
             DateTime crntDT = DateTime.Now;
