@@ -7,12 +7,12 @@ class AgeAfterTenYears
 {
     static void Main()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
         Console.Write("Type your birthday in format (dd.MM.yyyy): ");
-        string userInput = Console.ReadLine(),
-               format = "dd.MM.yyyy";
+        string userInput = Console.ReadLine();
         DateTime userBday = default(DateTime);
 
-        if (DateTime.TryParseExact(userInput, format, null, DateTimeStyles.None, out userBday))
+        if (DateTime.TryParse(userInput, out userBday) && userInput.Length > 7)
         {
             DateTime crntDT = DateTime.Now;
             int age = crntDT.Year - userBday.Year;
@@ -23,6 +23,6 @@ class AgeAfterTenYears
         else
         {
             Console.WriteLine("Error: {0} is not valid DateTime format!", userInput);
-        }   
+        }
     }
 }
