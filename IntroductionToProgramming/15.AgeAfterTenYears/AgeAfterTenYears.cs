@@ -23,7 +23,7 @@ class AgeAfterTenYears
         }
         catch (Exception)
         {
-            Console.WriteLine("Invalid Date");
+            Console.WriteLine("Error: Invalid date format!);
         }
     }
 }
