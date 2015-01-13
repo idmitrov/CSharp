@@ -11,7 +11,7 @@ class PrintLongSequence
     {
         for (int i = 2; i < 1002; i++)
         {
-            Console.Write("{0}, ", i % 2 == 0 ? i : -i);
+            Console.Write("{0}{1} ", i % 2 == 0 ? i : -i, i < 1001 ? new string(',', 1) : Environment.NewLine);
         }
         Console.WriteLine();
     }
