@@ -7,17 +7,17 @@ class AgeAfterTenYears
 {
     static void Main()
     {
-        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+        Thread.CurrentThread.CurrentCulture = new CultureInfo("bg-BG");
         Console.Write("Type your birthday in format (dd.MM.yyyy): ");
         string userInput = Console.ReadLine();
-        DateTime userBday = default(DateTime);
+        DateTime bday = default(DateTime);
 
-        if (DateTime.TryParse(userInput, out userBday) && userInput.Length > 7)
+        if (DateTime.TryParse(userInput, out bday) && userInput.Length > 7)
         {
-            DateTime crntDT = DateTime.Now;
-            int age = crntDT.Year - userBday.Year;
+            DateTime today = DateTime.Now;
+            int age = today.Month >= bday.Month && today.Day >= bday.Day ? today.Year - bday.Year : today.Year - bday.Year - 1;
 
-            Console.WriteLine("Your age: {0}", crntDT.Month >= userBday.Month && crntDT.Day >= userBday.Day ? age : age -= 1);
+            Console.WriteLine("Your age: {0}", age);
             Console.WriteLine("Your age in 10 years: {0}", age + 10);
         }
         else
