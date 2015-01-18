@@ -9,7 +9,7 @@ class PrimeCheckNumber
 {
     static void Main()
     {
-        Console.Write("Please enter: ");
+        Console.Write("Type a number: ");
         int number = int.Parse(Console.ReadLine());
         bool isPrime = true;
 
