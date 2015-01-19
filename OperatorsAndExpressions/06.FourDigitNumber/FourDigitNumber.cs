@@ -30,9 +30,9 @@ class FourDigitNumber
                 if (n > 999 && n < 10000)
                 {
                     int a = n / 1000,
-                    b = n / 100 % 10,
-                    c = n / 10 % 10,
-                    d = n % 10,
+                        b = n / 100 % 10,
+                        c = n / 10 % 10,
+                        d = n % 10,
                     sumOfDigits = a + b + c + d;
 
                     Console.WriteLine("Sum of digits: {0}", sumOfDigits);
