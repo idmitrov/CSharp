@@ -13,7 +13,7 @@ class GravitationOnTheMoon
     {
         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        double weight = double.Parse(Console.ReadLine()),
+        double weight = double.Parse(Console.ReadLine().Replace(",", ".")),
                gravityDiff = 0.17,
                weightOnTheMoon = weight * gravityDiff;
 
